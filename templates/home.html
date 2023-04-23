@@ -39,17 +39,20 @@
           <div class="collapse-horizontal collapse" id="contact" style="">
             <div class="card card-body" style="width: 300px;">
               <div class="bd-example">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Your message for me...</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                  <input type="button" value="Submit"></input>
-                </div>
+                <form method="post" action="/Home">
+                  {% csrf_token %}
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Your message for me...</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+                </form>                
                 </div>
             </div>
           </div>
