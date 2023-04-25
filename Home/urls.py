@@ -8,7 +8,9 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path("", views.home, name='Home'),
-    path("Home", views.home, name='home')
+    path("Home", views.home, name='home'),
+    path("gameprojects", views.gameprojects, name='gameprojects'),
+    path("appprojects", views.appprojects, name='appprojects')
 ]
 
 urlpatterns += staticfiles_urlpatterns()

@@ -8,5 +8,5 @@ admin.site.index_title = "Wassup"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Home.urls'))
+    path('', include('Home.urls'))    
 ]

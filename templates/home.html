@@ -2,17 +2,24 @@
 
 {% block body %}
 
+<div class="bg-dark text-white">
+  <h2>Victor Basumatary</h2> <br />
+  WEB Dev and Game Dev Enthusiast
+</div>
+
 <div class="album py-5 bg-dark bg-gradient text-white">
-  <div>
+  <div class="pb-5">
     <center><h1><p>My Projects</p></h1></center>
   </div>
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
         <div class="col">
-          <div class="card shadow-sm">
-            {% load static %} <img src="{% static "/media/gamedev.png" %}" height="400" alt="Game Dev">
-            <div class="card-body hover-zoom">
-              <p class="card-text">Game Projects</p>
+          <div class="card shadow-sm">            
+              {% load static %} <img src="{% static "/media/gamedev.png" %}" height="400" alt="Game Dev" />        
+            <div class="card-body ">
+              <a class="nav-link" href="/gameprojects">
+                <center><p class="card-text">Game Projects</p></center>
+              </a>
             </div>
           </div>
         </div>
@@ -20,7 +27,9 @@
           <div class="card shadow-sm">
             {% load static %} <img src="{% static "/media/download.png" %}" height="400" alt="Software Dev">
             <div class="card-body">
-              <p class="card-text">App Projects</p>
+              <a class="nav-link" href="appprojects">
+                <center><p class="card-text">App Projects</p></center>
+              </a>
             </div>
           </div>
         </div>
@@ -28,35 +37,4 @@
     </div>
 </div>
 
-<div class="position-absolute top-0 end-0 px-2 my-2">
-    {% comment %} <div class="bd-example">
-        <p>
-          <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contact" aria-expanded="false" aria-controls="contact">
-            Contact Me
-          </button>
-        </p>
-        <div style="min-height: 120px;">
-          <div class="collapse-horizontal collapse" id="contact" style="">
-            <div class="card card-body" style="width: 300px;">
-              <div class="bd-example">
-                <form action="https://formspree.io/f/xayzalej" method="POST">
-                  <!-- {% csrf_token %} -->
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label">Your message for me...</label>
-                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                  </div>
-                  <div class="mb-3">
-                    <button class="btn btn-primary" type="submit">Submit</button>
-                  </div>
-                </form>                
-                </div>
-            </div>
-          </div>
-        </div>
-    </div> {% endcomment %}
-</div>
 {% endblock body %}

@@ -11,3 +11,9 @@ def home(request):
         contact.save()
 
     return render(request, 'home.html')
+
+def gameprojects(request):
+    return render(request, 'gameprojects.html')
+
+def appprojects(request):
+    return render(request, 'appprojects.html')
