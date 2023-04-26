@@ -10,7 +10,8 @@ urlpatterns = [
     path("", views.home, name='Home'),
     path("Home", views.home, name='home'),
     path("gameprojects", views.gameprojects, name='gameprojects'),
-    path("appprojects", views.appprojects, name='appprojects')
+    path("appprojects", views.appprojects, name='appprojects'),
+    path('cv', views.cv, name='cv')
 ]
 
 urlpatterns += staticfiles_urlpatterns()
