@@ -3,33 +3,39 @@
 {% block body %}
 
 <div class="bg-dark text-white">
-  <h2>Victor Basumatary</h2> <br />
-  WEB Dev and Game Dev Enthusiast
+  <div class="animate__animated animate__fadeInLeft container mx-3">
+    <h2>Victor Basumatary</h2> <br />
+    <small>WEB Dev and Game Dev Enthusiast</small>
+  </div>
 </div>
 
 <div class="album py-5 bg-dark bg-gradient text-white">
-  <div class="pb-5">
+  <div class="pb-5 animate__animated animate__jackInTheBox">
     <center><h1><p>My Projects</p></h1></center>
   </div>
     <div class="container">
       <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
         <div class="col">
-          <div class="card shadow-sm">            
+          <div class="card shadow-sm opacity-75">            
               {% load static %} <img src="{% static "/media/gamedev.png" %}" height="400" alt="Game Dev" />        
-            <div class="card-body ">
-              <a class="nav-link" href="/gameprojects">
-                <center><p class="card-text">Game Projects</p></center>
-              </a>
+            <div class="card-body text-center bg-secondary">
+              <button type="button" class="btn btn-warning">
+                <a class="nav-link" href="/gameprojects">
+                  <center><p class="card-text">Game Projects</p></center>
+                </a>
+              </button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm opacity-75">
             {% load static %} <img src="{% static "/media/download.png" %}" height="400" alt="Software Dev">
-            <div class="card-body">
-              <a class="nav-link" href="appprojects">
-                <center><p class="card-text">Other Projects</p></center>
-              </a>
+            <div class="card-body text-center bg-secondary">
+              <button type="button" class="btn btn-warning">
+                <a class="nav-link" href="appprojects">
+                  <center><p class="card-text">Other Projects</p></center>
+                </a>
+              </button>
             </div>
           </div>
         </div>
