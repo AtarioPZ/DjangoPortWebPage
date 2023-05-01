@@ -10,8 +10,7 @@
   </head>
   <body style="background-color:#696969; background-image: url('#');">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">        
-        <a class="navbar-brand" href="#">Victor</a>
+      <div class="container-fluid ">        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,13 +23,16 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Projects
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu bg-secondary">
                 <li><a class="dropdown-item" href="/gameprojects">Games</a></li>
                 <li><a class="dropdown-item" href="appprojects">Others</a></li>
               </ul>
             </li>
           </ul>          
         </div>
+        <a class="navbar-brand" href="/Home">
+          {% load static %} <img src="{% static "/media/logo.png" %}" height="50" alt="Profile Logo">
+        </a>
         <div class="d-flex flex-column-reverse">
           <div class="p-2">
             <div class="bd-example">
